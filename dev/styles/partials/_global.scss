@@ -1,0 +1,34 @@
+// Colours
+$backgroundGrey: #5b5b5b;
+
+$fontLight: #fff;
+$fontDark: #1e1e1e;
+$copyGrey: rgba(35, 36, 40, 0.6);
+$borderGrey: rgba(35, 36, 40, 0.2);
+$fontAccent: #a6854b; 
+
+$accentOne: #a6854b;
+
+$mainFont: 'Montserrat', sans-serif;
+$accentFont: 'Playfair Display', serif;
+// standard tags
+ul {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: auto;
+}
+
+a {
+	text-decoration:none;
+}
+
+p {
+	line-height: 28px;
+}
+

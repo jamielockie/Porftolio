@@ -1,0 +1,36 @@
+.skills__gallery {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	border: 5px solid $borderGrey;
+}
+
+.skills__item {
+	width: 33%;
+	display: flex;
+	border: 1px solid $borderGrey;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.skills__title {
+	color: $fontDark;
+	text-align: left;
+	margin: 0px;
+}
+
+.skills__copyContainer {
+	padding: 50px 30px 50px 95px;
+	position: relative;
+	i {
+		color: $accentOne;
+		font-size: 60px;
+		position: absolute;
+		top: 50;
+		left: 10px;
+	} 
+}
+

@@ -1,0 +1,66 @@
+// Headings
+body {
+	font-family: $mainFont;
+}
+
+h1 {
+	font-family: $mainFont;
+	display: inline-block;
+	color:  $fontLight;
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 90px;
+	text-align: left;
+}
+
+h3 {
+	font-family: $mainFont;
+	color: $fontDark;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 65px;
+	margin: auto;
+
+}
+
+h5 {
+	font-family: $mainFont;
+	color:  $fontAccent;
+	font-size: 14px;
+	font-weight: 400;
+	// line-height: 45px;
+	text-align: left;
+	padding: 0;
+	margin: auto;
+
+}
+
+.title__byline {
+	font-family: $accentFont;
+	display: inline-block;
+	color:  $accentOne;
+	font-size: 40px;/* Approximation due to font substitution */
+	font-style: italic;
+	line-height: 90px;/* Approximation due to font substitution */
+	text-align: left;
+}
+
+.header__nav li {
+	width: 25%;
+	font-family: $mainFont;
+	color: $fontLight;
+	font-size: 0.813rem;
+	font-weight: 400;
+	line-height: 7.904;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.skills__title {
+	color: black;
+	font-weight: 700;
+}
+
+.copy {
+	color: $copyGrey;
+}

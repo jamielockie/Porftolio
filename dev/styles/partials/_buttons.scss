@@ -1,0 +1,21 @@
+.button__rectangle {
+	background: none;
+	padding: 15px 10px;
+	border: 2px solid $accentOne;
+	font-family: Montserrat;
+	color:  $fontLight;
+	font-size: 14px;
+	font-weight: 500;
+	// line-height: 6.429;
+	text-align: left; 
+}
+
+.button__circle {
+	background-color: $accentOne;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	color: $fontLight;
+	border: none;
+	
+}
