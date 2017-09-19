@@ -1,36 +1,63 @@
+.skills__section {
+	// padding-bottom: 140px;
+	background: linear-gradient(360deg, rgba(225,255,255, 0.3), rgba(255,255,255,1)), url(../../public/styles/assets/ryan-pohanic-13342-min.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	padding-bottom: 160px;
+}
+
 .skills__gallery {
 	width: 100%;
 	display: flex;
+	// background
 	justify-content: center;
+	background-color: white;
 	flex-wrap: wrap;
 	align-items: center;
 	border: 5px solid $borderGrey;
+	margin: auto;
+	margin-top: 80px;
+	@include respond-to("medium") {
+		width: 60%;
+	}
+	@include respond-to("small") {
+		width: 85%;
+	}
 }
 
 .skills__item {
-	width: 33%;
+	width: calc(100% / 4);
 	display: flex;
-	border: 1px solid $borderGrey;
+	// border: 1px solid $borderGrey;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+	@include respond-to("medium") {
+		width: calc(100% / 2)
+	}
 }
 
 .skills__title {
 	color: $fontDark;
 	text-align: left;
 	margin: 0px;
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
 .skills__copyContainer {
-	padding: 50px 30px 50px 95px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 30px 40px;
 	position: relative;
 	i {
 		color: $accentOne;
 		font-size: 60px;
-		position: absolute;
-		top: 50;
-		left: 10px;
+		padding: 10px;
+		// padding-right: 10px;
 	} 
 }
-

@@ -3,61 +3,110 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jamie Lockie</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link rel="stylesheet" href="public/styles/style.css">
 	<script src="https://use.fontawesome.com/9b1f59a0bf.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
 </head>
 <body>
-
 	<header class="header__section">
-		<div class="clearfix wrapper">
-			<div class="header__container">	
-				<div class="header__logo">
-					<img src="" alt="" class="logo__icon">
-					<div class="logo__text">Jamie Lockie</div>
-				</div>
-				<!-- <nav class="header__nav"> -->
-					<ul class="header__nav">
-						<li>Skills</li>
-						<li>Work</li>
-						<li>Reads</li>
-						<li>Contact</li>
-					</ul>
-				<!-- </nav> -->
-					<ul class="header__social"> 
-						<li>
-							<a href="https://twitter.com/Jamielockie1" target="_blank"><i class="fa fa-twitter"></i></a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/jamie-lockie-039371135/" target="_blank"><i class="fa fa-linkedin"></i></a>
-						</li>
-						<li>
-							<a href="https://github.com/jamielockie/jamielockie.github.io" target="_blank"><i class="fa fa-github-alt"></i></a>
-						</li>
-					</ul>
-			</div>
-		</div>
+		<nav class="header__container wrapper">	
+				<ul class="header__nav">
+					<li><a class="header__nav--items" href="#work">Work</a></li>
+					<li><a class="header__nav--items" href="#skills">Skills</a></li>
+					<li><a class="header__nav--items" href="#blog">Blog</a></li>
+					<li><a class="header__nav--items" href="#contact">Contact</a></li>
+				</ul>
+				<ul class="header__nav--social"> 
+					<li>
+						<a href="https://twitter.com/Jamielockie1" target="_blank"><i class="fa fa-twitter header__socialitem"></i></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/jamie-lockie-039371135/" target="_blank"><i class="fa fa-linkedin header__socialitem"></i></a>
+					</li>
+					<li>
+						<a href="https://github.com/jamielockie/jamielockie.github.io" target="_blank"><i class="fa fa-github-alt header__socialitem"></i></a>
+					</li>
+				</ul>
+		</nav>
 		<section class="hero__section">
 			<div class="wrapper">
 				<div class="title__container">
 					<h1>Jamie <br /> Lockie <span class="title__byline">Web Developer</span></h1>
-					<div>
+					<div class="title__button--container">
+						<div class="title__button--keyline"></div>
 						<button class="button__rectangle">See my work</button>
 					</div>
 				</div>
 			</div>
 		</section>
 	</header>
-
-
-	<section class="about__section">
+	
+	<section id="work" class="work__section">
+		<div class="wrapper">
+			<div class="sectiontitle__container">
+				<h5>Things I've Made</h5>
+				<h3>Selected Work</h3>
+			</div>
+			<div class="work__wrapper">
+				<div class="work__container">
+					<div class="work__imgContainer">
+						<a href=""><img class="work__img" src="./public/styles/assets/friendtrip__mockup-min.jpg" alt=""></a>
+					</div>
+					<div class="work__contentContainer">
+			<!-- 			<p class="work__numWatermark">01</p> -->
+						<h4 class="work__title">FriendTrip</h4>
+						<h6>React, Firebase, ES6, JavaScript, Sass, CSS3, HTML5</h6>
+						<p class="work__copy copy"> An interactive carpooling dashboard built with React and Firebase.</p>
+						<div class="work__buttonContainer">
+							<button class="button__rectangle--keyline">View Live</button>
+							<button class="button__rectangle--keyline">View on Github</button>
+						</div>
+					</div>
+				</div>
+				<div class="work__container">
+					<div class="work__imgContainer">
+						<a href=""><img class="work__img" src="./public/styles/assets/jobseeker__mockup-min.jpg" alt=""></a>
+					</div>
+					<div class="work__contentContainer">
+						<!-- <p class="work__numWatermark">02</p> -->
+						<h4 class="work__title">Job Seeker</h4>
+						<h6>APIs, Object Oriented Programming, Collaborative, JavaScript, jQuery, ES6, Sass, CSS3, HTML 5</h6>
+						<p class="work__copy copy"> Job search Application using the Indeed API and Google's Autocomplete API. Built with Wilson Klodt Wong and Evelyn Cheung</p>
+						<div class="work__buttonContainer">
+							<button class="button__rectangle--keyline">View Live</button>
+							<button class="button__rectangle--keyline">View on Github</button>
+						</div>
+					</div>
+				</div>
+				<div class="work__container">
+					<div class="work__imgContainer">
+						<img class="work__img" src="./public/styles/assets/univers__mockup-min.jpg" alt="">
+					</div>
+					<div class="work__contentContainer">
+						<!-- <p class="work__numWatermark">03</p> -->
+						<h4 class="work__title">Univers</h4>
+						<h6>PSD Conversion</h6>
+						<p class="work__copy copy"> Fully responsive PSD Conversion for Educational Institution </p>
+						<div class="work__buttonContainer">
+							<button class="button__rectangle--keyline">View Live</button>
+							<button class="button__rectangle--keyline">View on Github</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- 
+	<section id="about" class="about__section">
 		<div class="wrapper">
 			<div class="about__container">
-				<img src="https://unsplash.it/430/475" alt="" class="about__img">
+				<div class="about__imgContainer">
+					<img class="about__img" src="./dev/styles/assets/headshot2.jpg" alt="" class="about__img">
+				</div>
 				<div class="aboutContent__container">
-					<h5 class="aboutContent__byline">who we are</h5>
+					<h5 class="aboutContent__byline">who I am</h5>
 					<h3 class="aboutContent__title">I like stuff COPY</h3>
 					<div class="aboutContent__copy--container">
 						<div>
@@ -72,9 +121,11 @@
 				</div>
 			</div>
 			<div class="about__container about__container--right">
-				<img src="https://unsplash.it/430/475" alt="" class="about__img">
+				<div class="about__imgContainer">
+					<img src="https://unsplash.it/430/475" alt="" class="about__img">
+				</div>
 				<div class="aboutContent__container">
-					<h5 class="aboutContent__byline">who we are</h5>
+					<h5 class="aboutContent__byline">who I am</h5>
 					<h3 class="aboutContent__title">I like stuff COPY</h3>
 					<div class="aboutContent__copy--container">
 						<div>
@@ -90,12 +141,11 @@
 			</div>
 		</div>
 	</section>
-
-
-	<section class="skills__section">
+ -->
+	<section id="skills" class="skills__section">
 		<div class="wrapper">
 		<div class="sectiontitle__container">
-			<h5>recent work</h5>
+			<h5>things i know</h5>
 			<h3>core skills</h3>
 		</div>
 			<ul class="skills__gallery">
@@ -103,14 +153,14 @@
 						<div class="skills__copyContainer skills__copyContainer--react ">
 							<i class="devicon-react-original"></i>
 							<h5 class="skills__title">React</h5>
-							<p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p>
+							<!-- <p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p> -->
 						</div>
 				</li>
 				<li class="skills__item">
 						<div class="skills__copyContainer skills__copyContainer--html">
 							<i class="devicon-html5-plain"></i>
 							<h5 class="skills__title">HTML5</h5>
-							<p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p>
+							<!-- <p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p> -->
 						</div>
 				</li>
 				<li class="skills__item">
@@ -118,7 +168,7 @@
 						skills__copyContainer--css">
 							<i class="devicon-css3-plain"></i>
 							<h5 class="skills__title">CSS3</h5>
-							<p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p>
+							<!-- <p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p> -->
 						</div>
 				</li>
 				<li class="skills__item">
@@ -126,7 +176,7 @@
 						skills__copyContainer--sass">
 							<i class="devicon-sass-original"></i>
 							<h5 class="skills__title">SCSS</h5>
-							<p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p>
+							<!-- <p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p> -->
 						</div>
 				</li>
 				<li class="skills__item">
@@ -134,7 +184,7 @@
 						skills__copyContainer--JS">
 							<i class="devicon-javascript-plain"></i>
 							<h5 class="skills__title">JavaScript</h5>
-							<p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p>
+							<!-- <p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p> -->
 						</div>
 				</li>
 				<li class="skills__item">
@@ -142,89 +192,72 @@
 						skills__copyContainer--gulp">
 							<i class="devicon-gulp-plain"></i>
 							<h5 class="skills__title">Gulp</h5>
-							<p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p>
-						</div>
-				</li>
-				<!-- <li class="skills__item">
-						<div class="skills__copyContainer">
-							<h5 class="skills__title">HTML5</h5>
-							<p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p>
+							<!-- <p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p> -->
 						</div>
 				</li>
 				<li class="skills__item">
-						<div class="skills__copyContainer">
-							<h5 class="skills__title">HTML5</h5>
-							<p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p>
+						<div class="skills__copyContainer
+						skills__copyContainer--github">
+							<i class="devicon-github-plain"></i>
+							<h5 class="skills__title">Github</h5>
+							<!-- <p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p> -->
 						</div>
-				</li> -->
+				</li>
+				<li class="skills__item">
+						<div class="skills__copyContainer
+						skills__copyContainer--jQuery">
+							<i class="devicon-jquery-plain"></i>
+							<h5 class="skills__title">jQuery</h5>
+							<!-- <p class="skills__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione mollitia </p> -->
+						</div>
+				</li>
 			</ul>
 		</div>
 	</section>
 
-
-	<section class="featured_section">
-		<h5>featured items</h5>
-		<h3>Featured Services</h3>
-		<div class="featured__container">
-			<img src="" alt="">
-			<div class="bacground__div"></div>
-			<div class="content-column">
-				<p class="numWatermark">01</p>
-				<h4>React Project</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis repudiandae in iusto vel pariatur necessitatibus quo perspiciatis, veritatis et officia labore enim dolores ipsam saepe tenetur recusandae non velit quod! ipsum dolor sit amet, consectetur adipisicing elit. Saepe perspiciatis dignissimos repellat corporis praesentium quos minus, vero, voluptatum adipisci assumenda eos illum. Eos consectetur assumenda, tempora. Voluptas harum fuga doloribus?</p>
-				<button>more details</button>
+	<section id="blog" class="blog__section">
+		<div class="wrapper">
+			<div class="sectiontitle__container">
+				<h5>Musings of a learner</h5>
+				<h3>the blog</h3>
 			</div>
+			<ul class="blog__container">
+				<li class="blog__contentContainer">
+					<img src="https://unsplash.it/470/300" alt="">
+					<div class="blog__copyContainer">
+<!-- 						<p class="blog__date">Jul 31, 2017</p> -->
+						<a class="blog__link" href="https://medium.com/@jamielockie/roses-are-red-colour-accessibility-and-web-design-852c3a5052de" target="_blank">Roses are Red: Colour Accessibility and Web Design.</a>
+					</div>
+				</li>
+				<li class="blog__contentContainer">
+					<img src="https://unsplash.it/470/300" alt="">
+					<div class="blog__copyContainer">
+<!-- 						<p class="blog__date">Aug 12, 2017</p> -->
+						<a class="blog__link" href="https://medium.com/@jamielockie/how-to-use-adobe-assets-for-free-easy-in-browser-psd-conversion-de5be7f8c970" target="_blank">How to use Adobe Assets for free, easy, in-browser PSD conversion.</a>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</section>
 
-
-	<section class="contact__section">
-		<h3>get in touch</h3>
-		<p>If you have any questions don't hesitate to get in touch</p>
-		<form action="">
-			<fieldset>
-				<input type="text">
-				<input type="email">
-				<input type="phone">
-			</fieldset>
-			<fieldset>
-				<input type="textarea">
-			</fieldset>
-			<button>Send Message</button>
+	<section id="contact" class="contact__section">
+	<div class="wrapper">
+		
+		<div class="sectiontitle__container">
+			<h5>Give me a shout!</h5>
+			<h3>contact</h3>
+		</div>
+		<h6 class="contact__byline">Drop me a line anytime at <a href="mailto:hello@jamielockie.com">hello@jamielockie.com</a> or fill out the form below</h6>
+		<form action="https://formspree.io/hello@jamielockie.com" class="contact__formInputs" method="POST">
+			<div class="contact__inputContainer">
+				<input name="name" type="text" placeholder="Name" required>
+				<input name="email" type="email" placeholder="Email" required>
+				<input name="phone" type="phone" placeholder="Phone" required>
+			</div>
+			<div class="contact__inputContainer--textarea">
+				<textarea name="text" placeholder="What's up?"></textarea>
+			</div>
+			<button class="button__rectangle button__rectangle--keyline button__rectangle--contact">Send Message</button>
 		</form>
+	</div>
 	</section>
-
-
-	<footer class="header__section">
-		<div class="wrapper">
-			<div class="footer__nav">
-				<div class="header__logo">
-					<img src="" alt="" class="logo__icon">
-					<div class="logo__text">Jamie Lockie</div>
-				</div>
-				<nav class="header__nav">
-					<ul>
-						<li>Skills</li>
-						<li>Work</li>
-						<li>Reads</li>
-						<li>Contact</li>
-					</ul>
-				</nav>
-				<div class="header__social">
-					<ul>
-						<li>twitter</li>
-						<li>LinkedIN</li>
-						<li>gitHub</li>
-					</ul>
-				</div>
-						</div>
-			</div>
-			<div>
-				<p>developed by Jamie Lockie</p>
-				<p>September 2017</p>
-			</div>
-	</footer>
-
-	<script src="public/scripts/main.js"></script>
-</body>
-</html>

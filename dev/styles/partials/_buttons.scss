@@ -1,5 +1,6 @@
 .button__rectangle {
 	background: none;
+	min-width: 161px;
 	padding: 15px 10px;
 	border: 2px solid $accentOne;
 	font-family: Montserrat;
@@ -7,7 +8,22 @@
 	font-size: 14px;
 	font-weight: 500;
 	// line-height: 6.429;
-	text-align: left; 
+	text-align: center; 
+	text-transform: uppercase;
+}
+
+.button__rectangle--keyline {
+	background: none;
+	color: black;
+	font-weight: 700;
+	border: none;
+	border-bottom: 3px solid black; 
+	text-transform: uppercase;
+	padding: 0px 0px 5px 0px;
+}
+
+.button__rectangle--contact {
+	margin-top: 30px;
 }
 
 .button__circle {
@@ -17,5 +33,4 @@
 	border-radius: 50%;
 	color: $fontLight;
 	border: none;
-	
 }

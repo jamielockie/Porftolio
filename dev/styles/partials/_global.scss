@@ -2,26 +2,37 @@
 $backgroundGrey: #5b5b5b;
 
 $fontLight: #fff;
-$fontDark: #1e1e1e;
-$copyGrey: rgba(35, 36, 40, 0.6);
+$fontDark: #222;
+$fontLightGrey: #6e6e6e; 
+$copyGrey: #4e4e4e;
 $borderGrey: rgba(35, 36, 40, 0.2);
-$fontAccent: #a6854b; 
+$fontAccent: #ff6f00; 
 
-$accentOne: #a6854b;
+$accentOne: #ff6f00;
 
 $mainFont: 'Montserrat', sans-serif;
 $accentFont: 'Playfair Display', serif;
-// standard tags
+
+
+a {
+	text-decoration: none;
+}
+
 ul {
 	list-style-type: none;
-	display: inline-block;
+	display: inline-block;	
 	padding: 0px;
 	margin: 0px;
 }
 
 .wrapper {
-	max-width: 1170px;
+	max-width: 970px;
 	margin: auto;
+	padding: 0px 15px 0px 15px;
+}
+
+.sectiontitle__container {
+	padding-top: 140px;
 }
 
 a {
@@ -32,3 +43,31 @@ p {
 	line-height: 28px;
 }
 
+
+// Media Queries
+
+@mixin respond-to($breakpoint) {
+	@if $breakpoint == "small" {
+		@media (max-width: 480px) {
+			@content;
+		}
+}
+
+	@else if $breakpoint == "medium" {
+		@media (max-width: 580px) {
+			@content;
+		}
+	}
+
+	@else if $breakpoint == "medium-large" {
+		@media (max-width: 768px) {
+			@content;
+		}
+	}
+
+	@else if $breakpoint == "large" {
+		@media (max-width: 940px) {
+			@content;
+		}
+	}
+}

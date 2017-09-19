@@ -1,21 +1,29 @@
 
 .about__container {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	margin: auto;
-	img {
-		padding: 0px 30px;
-	}
+	padding-top: 150px;
+}
+
+.about__imgContainer {
+	width: 430px;
+}
+
+.about__img{
+	width: 100%;
 }
 
 .about__container--right {
 	flex-direction: row-reverse;
-	> img {
+	padding-top: 30px;
+	> .about__imgContainer > .about__img {
 		transform: translateY(-50px)
 	}
 }
+
 .aboutContent__container {
 	width: 50%;
 	padding: 0px 30px;

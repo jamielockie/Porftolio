@@ -1,0 +1,64 @@
+.contact__section {
+	padding-bottom: 140px; 
+}
+
+.contact__byline {
+	padding-top: 50px;
+	a {
+		color: $accentOne;
+	}
+}
+
+.contact__inputContainer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@include respond-to("medium") {
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+.contact__inputContainer--textarea {
+		width: 100%;
+}
+
+.contact__formInputs {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	border: none;
+	fieldset {
+		border: none;
+		width: 100%;
+		padding: 0px;
+	}
+	input {
+		width: 32%;
+		line-height: 60px;
+		border: 3px solid $accentOne;
+		padding-left: 15px;
+		transition: all 0.2s ease-in-out;
+		&:hover {
+			border: 3px solid $fontLightGrey;
+			transition: border 0.2s ease-in-out;
+		}
+		@include respond-to("medium") {
+			margin: 15px;
+			width: 100%;
+		}
+	}
+	textarea {
+		width: 100%;
+		line-height: 1.5;
+		border: 3px solid $accentOne;
+		margin: 15px 0px 0px 0px;
+		padding-top: 15px;
+		min-height: 160px;
+	}
+}
+
+

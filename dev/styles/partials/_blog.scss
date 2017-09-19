@@ -1,0 +1,40 @@
+.blog__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 80px;
+	@include respond-to("medium-large") {
+		flex-direction: column;
+	}
+}
+
+.blog__contentContainer {
+	position: relative;
+	width: calc(50% - 30px);
+	img {
+		width: 100%;
+	}
+	@include respond-to("medium-large") {
+		width: 80%;
+		margin: 30px 0px;
+	}
+}
+
+.blog__date {
+	font-size: 16px;
+	color: $accentOne;
+}
+
+.blog__link {
+	font-size: 24px;
+	font-weight: 700;
+	color: $fontLight;
+}
+
+.blog__copyContainer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 5;
+	padding: 15px;
+}
