@@ -8,11 +8,14 @@
 	<script src="https://use.fontawesome.com/9b1f59a0bf.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
 	<header class="header__section">
-		<nav class="header__container wrapper">	
+		<nav class="header__container wrapper">
 				<ul class="header__nav">
+<!-- 					<li><img src="public/styles/assets/tree.png" alt=""></li>	 -->
 					<li><a class="header__nav--items" href="#work">Work</a></li>
 					<li><a class="header__nav--items" href="#skills">Skills</a></li>
 					<li><a class="header__nav--items" href="#blog">Blog</a></li>
@@ -33,16 +36,40 @@
 		<section class="hero__section">
 			<div class="wrapper">
 				<div class="title__container">
-					<h1>Jamie <br /> Lockie <span class="title__byline">Web Developer</span></h1>
+					<h1 class="animated fadeInLeft">Jamie <br /> Lockie <span class="animated fadeInRight title__byline">Web Developer</span></h1>
 					<div class="title__button--container">
 						<div class="title__button--keyline"></div>
-						<button class="button__rectangle">See my work</button>
+						<a href="#work"> <button class="button__rectangle">See my work</button></a>
 					</div>
 				</div>
 			</div>
 		</section>
+		<a href="https://unsplash.com/@rafaeltraceur" target="_blank"><i class="creditBadge fa fa-camera-retro" aria-hidden="true"></i></a>
 	</header>
 	
+	<section id="about" class="about__section">
+		<div class="wrapper">
+			<div class="about__container">
+				<div class="about__imgContainer">
+					<img class="about__img" src="./public/styles/assets/headshot2-min.jpg" alt="" class="about__img">
+				</div>
+				<div class="aboutContent__container">
+					<h5 class="aboutContent__byline">a deep dive</h5>
+					<h3>About Me</h3>
+					<div class="aboutContent__copy--container">
+						<div>
+							<p class="aboutContent__copy copy">
+							I'm a front end developer based in Toronto. I have been a canoe expedition leader, ski patroller, and home builder. I work hard to incorporate that same sense of adventure, team-focused approach, and attention to detail into my projects. I value a supportive and ambitious community, and would love to hear about yours.</p>
+							<a href="#contact"><button  class="button__rectangle--keyline">Get in Touch</button></a>
+						</div>
+						<div class="title__button--keyline"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="work" class="work__section">
 		<div class="wrapper">
 			<div class="sectiontitle__container">
@@ -52,7 +79,9 @@
 			<div class="work__wrapper">
 				<div class="work__container">
 					<div class="work__imgContainer">
-						<a href=""><img class="work__img" src="./public/styles/assets/friendtrip__mockup-min.jpg" alt=""></a>
+						<a href="https://friendshrimp-a4c11.firebaseapp.com" target="_blank">
+							<img class="work__img" src="./public/styles/assets/friendtrip__mockup-min.jpg" alt="">
+						</a>
 					</div>
 					<div class="work__contentContainer">
 			<!-- 			<p class="work__numWatermark">01</p> -->
@@ -60,14 +89,14 @@
 						<h6>React, Firebase, ES6, JavaScript, Sass, CSS3, HTML5</h6>
 						<p class="work__copy copy"> An interactive carpooling dashboard built with React and Firebase.</p>
 						<div class="work__buttonContainer">
-							<button class="button__rectangle--keyline">View Live</button>
+							<a href="https://friendshrimp-a4c11.firebaseapp.com" target="_blank"><button  class="button__rectangle--keyline">View Live</button></a>
 							<button class="button__rectangle--keyline">View on Github</button>
 						</div>
 					</div>
 				</div>
 				<div class="work__container">
 					<div class="work__imgContainer">
-						<a href=""><img class="work__img" src="./public/styles/assets/jobseeker__mockup-min.jpg" alt=""></a>
+						<a target="_blank" href="https://jamielockie.github.io/indeedApp/"><img class="work__img" src="./public/styles/assets/jobseeker__mockup-min.jpg" alt=""></a>
 					</div>
 					<div class="work__contentContainer">
 						<!-- <p class="work__numWatermark">02</p> -->
@@ -75,14 +104,14 @@
 						<h6>APIs, Object Oriented Programming, Collaborative, JavaScript, jQuery, ES6, Sass, CSS3, HTML 5</h6>
 						<p class="work__copy copy"> Job search Application using the Indeed API and Google's Autocomplete API. Built with Wilson Klodt Wong and Evelyn Cheung</p>
 						<div class="work__buttonContainer">
-							<button class="button__rectangle--keyline">View Live</button>
+							<a target="_blank" href="https://jamielockie.github.io/indeedApp/"><button class="button__rectangle--keyline">View Live</button></a>
 							<button class="button__rectangle--keyline">View on Github</button>
 						</div>
 					</div>
 				</div>
 				<div class="work__container">
 					<div class="work__imgContainer">
-						<img class="work__img" src="./public/styles/assets/univers__mockup-min.jpg" alt="">
+						<a href="http://jamielockie.com/univers/" target="_blank"><img class="work__img" src="./public/styles/assets/univers__mockup-min.jpg" alt=""></a>
 					</div>
 					<div class="work__contentContainer">
 						<!-- <p class="work__numWatermark">03</p> -->
@@ -90,7 +119,7 @@
 						<h6>PSD Conversion</h6>
 						<p class="work__copy copy"> Fully responsive PSD Conversion for Educational Institution </p>
 						<div class="work__buttonContainer">
-							<button class="button__rectangle--keyline">View Live</button>
+							<a href="http://jamielockie.com/univers/" target="_blank"><button class="button__rectangle--keyline">View Live</button></a>
 							<button class="button__rectangle--keyline">View on Github</button>
 						</div>
 					</div>
@@ -98,50 +127,7 @@
 			</div>
 		</div>
 	</section>
-<!-- 
-	<section id="about" class="about__section">
-		<div class="wrapper">
-			<div class="about__container">
-				<div class="about__imgContainer">
-					<img class="about__img" src="./dev/styles/assets/headshot2.jpg" alt="" class="about__img">
-				</div>
-				<div class="aboutContent__container">
-					<h5 class="aboutContent__byline">who I am</h5>
-					<h3 class="aboutContent__title">I like stuff COPY</h3>
-					<div class="aboutContent__copy--container">
-						<div>
-							<p class="aboutContent__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit culpa, distinctio expedita inventore ad voluptate.</p>
-							<button class="button__circle aboutContent__button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-						</div>
-						<div class="aboutContent__keyline--container">
-							<div class="aboutContent__keyline">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="about__container about__container--right">
-				<div class="about__imgContainer">
-					<img src="https://unsplash.it/430/475" alt="" class="about__img">
-				</div>
-				<div class="aboutContent__container">
-					<h5 class="aboutContent__byline">who I am</h5>
-					<h3 class="aboutContent__title">I like stuff COPY</h3>
-					<div class="aboutContent__copy--container">
-						<div>
-							<p class="aboutContent__copy copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit culpa, distinctio expedita inventore ad voluptate.</p>
-							<button class="button__circle aboutContent__button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-						</div>
-						<div class="aboutContent__keyline--container">
-							<div class="aboutContent__keyline">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
- -->
+
 	<section id="skills" class="skills__section">
 		<div class="wrapper">
 		<div class="sectiontitle__container">
@@ -213,24 +199,25 @@
 				</li>
 			</ul>
 		</div>
+		<a href="https://unsplash.com/@elevatedtv" target="_blank"><i class="creditBadge fa fa-camera-retro" aria-hidden="true"></i></a>
 	</section>
 
 	<section id="blog" class="blog__section">
 		<div class="wrapper">
 			<div class="sectiontitle__container">
-				<h5>Musings of a learner</h5>
+				<h5>Some light reading</h5>
 				<h3>the blog</h3>
 			</div>
 			<ul class="blog__container">
 				<li class="blog__contentContainer">
-					<img src="https://unsplash.it/470/300" alt="">
+					<a class="blog__link" href="https://medium.com/@jamielockie/roses-are-red-colour-accessibility-and-web-design-852c3a5052de" target="_blank"><img class="blog__img" src="public/styles/assets/gn-dim-301597.jpg" alt=""></a>
 					<div class="blog__copyContainer">
 <!-- 						<p class="blog__date">Jul 31, 2017</p> -->
 						<a class="blog__link" href="https://medium.com/@jamielockie/roses-are-red-colour-accessibility-and-web-design-852c3a5052de" target="_blank">Roses are Red: Colour Accessibility and Web Design.</a>
 					</div>
 				</li>
 				<li class="blog__contentContainer">
-					<img src="https://unsplash.it/470/300" alt="">
+					<a class="blog__link" href="https://medium.com/@jamielockie/how-to-use-adobe-assets-for-free-easy-in-browser-psd-conversion-de5be7f8c970" target="_blank"><img src="public/styles/assets/mikaela-shannon-205959.jpg" alt=""></a>
 					<div class="blog__copyContainer">
 <!-- 						<p class="blog__date">Aug 12, 2017</p> -->
 						<a class="blog__link" href="https://medium.com/@jamielockie/how-to-use-adobe-assets-for-free-easy-in-browser-psd-conversion-de5be7f8c970" target="_blank">How to use Adobe Assets for free, easy, in-browser PSD conversion.</a>
@@ -244,7 +231,7 @@
 	<div class="wrapper">
 		
 		<div class="sectiontitle__container">
-			<h5>Give me a shout!</h5>
+			<h5>Give me a shout</h5>
 			<h3>contact</h3>
 		</div>
 		<h6 class="contact__byline">Drop me a line anytime at <a href="mailto:hello@jamielockie.com">hello@jamielockie.com</a> or fill out the form below</h6>
@@ -257,7 +244,7 @@
 			<div class="contact__inputContainer--textarea">
 				<textarea name="text" placeholder="What's up?"></textarea>
 			</div>
-			<button class="button__rectangle button__rectangle--keyline button__rectangle--contact">Send Message</button>
 		</form>
+		<button class="button__rectangle--keyline button__rectangle--contact">Send Message</button>
 	</div>
 	</section>

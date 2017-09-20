@@ -6,12 +6,12 @@ $fontDark: #222;
 $fontLightGrey: #6e6e6e; 
 $copyGrey: #4e4e4e;
 $borderGrey: rgba(35, 36, 40, 0.2);
-$fontAccent: #ff6f00; 
 
 $accentOne: #ff6f00;
+$accentOneDark: darken($accentOne, 10%);
 
 $mainFont: 'Montserrat', sans-serif;
-$accentFont: 'Playfair Display', serif;
+// $accentFont: 'Playfair Display', serif;
 
 
 a {

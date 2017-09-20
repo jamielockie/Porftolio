@@ -4,6 +4,7 @@
 
 .contact__byline {
 	padding-top: 50px;
+	color: $fontLightGrey;
 	a {
 		color: $accentOne;
 	}
@@ -56,8 +57,11 @@
 		line-height: 1.5;
 		border: 3px solid $accentOne;
 		margin: 15px 0px 0px 0px;
-		padding-top: 15px;
+		padding: 15px 0px 0px 15px;
 		min-height: 160px;
+		&:hover {
+			border: 3px solid $fontLightGrey;
+		}
 	}
 }
 

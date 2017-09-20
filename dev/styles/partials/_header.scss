@@ -1,11 +1,14 @@
 .header__section {
-	height: 98vh;
+	height: 100vh;
 	background: linear-gradient(180deg, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5) 100%), url(../../public/styles/assets/trail-Rafael%20Morais-de-Santos-min.jpg);
 	background-color: $backgroundGrey;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	@include respond-to("medium-large") {
+		background-attachment: scroll;
+	}
 }
 
 .logo__text {
@@ -58,20 +61,27 @@
 	// font-size: 0.813rem;
 	font-weight: 400;
 	line-height: 7.904;
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
+	padding-left: 10px;
 }
 
 .header__nav--items {
 	color: $fontLight;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 2px;
+	&:hover {
+		text-shadow: 1px 1px $accentOne;
+	}
 }
 
 .header__socialitem {
 	color: $fontLight;
 	padding: 10px;
+	&:hover {
+		text-shadow: 1px 1px $accentOne;
+	}
 	// margin: 20px;
 	// &:hover {
 	// 	border: 1px solid $accentOne; 
@@ -86,7 +96,8 @@
 }
 
 .title__byline {
-	font-family: $accentFont;
+	// font-family: $accentFont;
+	font-weight: 400;
 	display: inline-block;
 	color:  $accentOne;
 	font-size: 30px;

@@ -10,6 +10,12 @@
 	// line-height: 6.429;
 	text-align: center; 
 	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		box-shadow: 2px 2px 0px $accentOne; 
+		border: 2px solid $fontLight;
+		transition: all 0.2s ease-in-out;
+	}
 }
 
 .button__rectangle--keyline {
@@ -20,6 +26,11 @@
 	border-bottom: 3px solid black; 
 	text-transform: uppercase;
 	padding: 0px 0px 5px 0px;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		border-bottom: 3px solid $accentOne;
+		transition: all 0.2s ease-in-out;
+	}
 }
 
 .button__rectangle--contact {
@@ -33,4 +44,12 @@
 	border-radius: 50%;
 	color: $fontLight;
 	border: none;
+}
+
+.creditBadge {
+	color: $fontLight;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	// opacity: 0.5;
 }
