@@ -1,14 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+$(function() {
+	$('a').smoothScroll({
+		offset: 100
+		});
 
-class App extends React.Component {
-    render() {
-      return (
-        <div>
-          Hello
-        </div>
-      )
-    }
-}
+	new WOW().init();
 
-ReactDOM.render(<App />, document.getElementById('app'));
+});

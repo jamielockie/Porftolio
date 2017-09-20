@@ -29,7 +29,11 @@
 	transition: all 0.2s ease-in-out;
 	&:hover {
 		border-bottom: 3px solid $accentOne;
+		// text-shadow: 1px 1px $accentOne;
 		transition: all 0.2s ease-in-out;
+	}
+	@include respond-to("small") {
+		margin-bottom: 15px;
 	}
 }
 

@@ -15,7 +15,6 @@
 	<header class="header__section">
 		<nav class="header__container wrapper">
 				<ul class="header__nav">
-<!-- 					<li><img src="public/styles/assets/tree.png" alt=""></li>	 -->
 					<li><a class="header__nav--items" href="#work">Work</a></li>
 					<li><a class="header__nav--items" href="#skills">Skills</a></li>
 					<li><a class="header__nav--items" href="#blog">Blog</a></li>
@@ -37,9 +36,9 @@
 			<div class="wrapper">
 				<div class="title__container">
 					<h1 class="animated fadeInLeft">Jamie <br /> Lockie <span class="animated fadeInRight title__byline">Web Developer</span></h1>
-					<div class="title__button--container">
+					<div class="title__button--container animated fadeIn">
 						<div class="title__button--keyline"></div>
-						<a href="#work"> <button class="button__rectangle">See my work</button></a>
+						<a href="#about"> <button class="button__rectangle">See my work</button></a>
 					</div>
 				</div>
 			</div>
@@ -72,7 +71,7 @@
 
 	<section id="work" class="work__section">
 		<div class="wrapper">
-			<div class="sectiontitle__container">
+			<div class="sectiontitle__container sectiontitle__container--work">
 				<h5>Things I've Made</h5>
 				<h3>Selected Work</h3>
 			</div>
@@ -80,23 +79,22 @@
 				<div class="work__container">
 					<div class="work__imgContainer">
 						<a href="https://friendshrimp-a4c11.firebaseapp.com" target="_blank">
-							<img class="work__img" src="./public/styles/assets/friendtrip__mockup-min.jpg" alt="">
+							<img class="work__img animated fadeIn wow" src="./public/styles/assets/friendtrip__mockup-min.jpg" alt="">
 						</a>
 					</div>
 					<div class="work__contentContainer">
-			<!-- 			<p class="work__numWatermark">01</p> -->
 						<h4 class="work__title">FriendTrip</h4>
 						<h6>React, Firebase, ES6, JavaScript, Sass, CSS3, HTML5</h6>
 						<p class="work__copy copy"> An interactive carpooling dashboard built with React and Firebase.</p>
 						<div class="work__buttonContainer">
 							<a href="https://friendshrimp-a4c11.firebaseapp.com" target="_blank"><button  class="button__rectangle--keyline">View Live</button></a>
-							<button class="button__rectangle--keyline">View on Github</button>
+							<a href="https://github.com/jamielockie/Project6" target="_blank"><button class="button__rectangle--keyline">View on Github</button></a>
 						</div>
 					</div>
 				</div>
 				<div class="work__container">
 					<div class="work__imgContainer">
-						<a target="_blank" href="https://jamielockie.github.io/indeedApp/"><img class="work__img" src="./public/styles/assets/jobseeker__mockup-min.jpg" alt=""></a>
+						<a target="_blank" href="https://jamielockie.github.io/indeedApp/"><img class="work__img animated fadeIn wow" src="./public/styles/assets/jobseeker__mockup-min.jpg" alt=""></a>
 					</div>
 					<div class="work__contentContainer">
 						<!-- <p class="work__numWatermark">02</p> -->
@@ -105,13 +103,13 @@
 						<p class="work__copy copy"> Job search Application using the Indeed API and Google's Autocomplete API. Built with Wilson Klodt Wong and Evelyn Cheung</p>
 						<div class="work__buttonContainer">
 							<a target="_blank" href="https://jamielockie.github.io/indeedApp/"><button class="button__rectangle--keyline">View Live</button></a>
-							<button class="button__rectangle--keyline">View on Github</button>
+							<a href="https://github.com/jamielockie/indeedApp" target="_blank"><button class="button__rectangle--keyline">View on Github</button></a>
 						</div>
 					</div>
 				</div>
 				<div class="work__container">
 					<div class="work__imgContainer">
-						<a href="http://jamielockie.com/univers/" target="_blank"><img class="work__img" src="./public/styles/assets/univers__mockup-min.jpg" alt=""></a>
+						<a href="http://jamielockie.com/univers/" target="_blank"><img class="work__img animated fadeIn wow" src="./public/styles/assets/univers__mockup-min.jpg" alt=""></a>
 					</div>
 					<div class="work__contentContainer">
 						<!-- <p class="work__numWatermark">03</p> -->
@@ -120,7 +118,7 @@
 						<p class="work__copy copy"> Fully responsive PSD Conversion for Educational Institution </p>
 						<div class="work__buttonContainer">
 							<a href="http://jamielockie.com/univers/" target="_blank"><button class="button__rectangle--keyline">View Live</button></a>
-							<button class="button__rectangle--keyline">View on Github</button>
+							<a href="https://github.com/jamielockie/Project2" target="_blank"><button class="button__rectangle--keyline">View on Github</button></a>
 						</div>
 					</div>
 				</div>
@@ -228,23 +226,42 @@
 	</section>
 
 	<section id="contact" class="contact__section">
-	<div class="wrapper">
-		
-		<div class="sectiontitle__container">
-			<h5>Give me a shout</h5>
-			<h3>contact</h3>
+		<div class="wrapper">
+			
+			<div class="sectiontitle__container">
+				<h5>Give me a shout</h5>
+				<h3>contact</h3>
+			</div>
+			<h6 class="contact__byline">Drop me a line anytime at <a href="mailto:hello@jamielockie.com">hello@jamielockie.com</a> or fill out the form below</h6>
+			<form action="https://formspree.io/hello@jamielockie.com" class="contact__formInputs" method="POST">
+				<div class="contact__inputContainer">
+					<input name="name" type="text" placeholder="Name" required>
+					<input name="email" type="email" placeholder="Email" required>
+					<input name="phone" type="phone" placeholder="Phone" required>
+				</div>
+				<div class="contact__inputContainer--textarea">
+					<textarea name="text" placeholder="What's up?"></textarea>
+				</div>
+			</form>
+			<button class="button__rectangle--keyline button__rectangle--contact">Send Message</button>
 		</div>
-		<h6 class="contact__byline">Drop me a line anytime at <a href="mailto:hello@jamielockie.com">hello@jamielockie.com</a> or fill out the form below</h6>
-		<form action="https://formspree.io/hello@jamielockie.com" class="contact__formInputs" method="POST">
-			<div class="contact__inputContainer">
-				<input name="name" type="text" placeholder="Name" required>
-				<input name="email" type="email" placeholder="Email" required>
-				<input name="phone" type="phone" placeholder="Phone" required>
-			</div>
-			<div class="contact__inputContainer--textarea">
-				<textarea name="text" placeholder="What's up?"></textarea>
-			</div>
-		</form>
-		<button class="button__rectangle--keyline button__rectangle--contact">Send Message</button>
-	</div>
 	</section>
+
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<!-- Smooth Scroll CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+
+	<!-- wow.js CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+	<!-- <script src="public/scripts/app.js"></script> -->
+	<script src="public/scripts/app.js"></script>
+	
+<!-- 	    <script>
+   new WOW().init();
+</script>
+	 -->
+</body>
