@@ -129,7 +129,7 @@
 .title__button--keyline {
 	display: inline-block;
 	width: 100%;
-	height: 1px;
+	height: 2px;
 	margin: 10px;
 	background-color: $accentOne;
 	@include respond-to("medium") {
