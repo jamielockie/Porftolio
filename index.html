@@ -10,8 +10,19 @@
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<style>
+		body {
+				opacity: 1;
+				transition: 2s opacity;
+		}
+		body.fade-out {
+				opacity: 0;
+				transition: none;
+		}
+	</style>
 </head>
-<body>
+<body class="fade-out">
+<script>document.body.className += ' fade-out';</script>
 	<header class="header__section">
 		<nav class="header__container wrapper">
 				<ul class="header__nav">
@@ -99,7 +110,7 @@
 					<div class="work__contentContainer">
 						<!-- <p class="work__numWatermark">02</p> -->
 						<h4 class="work__title">Job Seeker</h4>
-						<h6>APIs, Object Oriented Programming, Collaborative, JavaScript, jQuery, ES6, Sass, CSS3, HTML 5</h6>
+						<h6>APIs, Collaborative, JavaScript, jQuery, ES6, Sass, CSS3, HTML 5</h6>
 						<p class="work__copy copy"> Job search Application using the Indeed API and Google's Autocomplete API. Built with Wilson Klodt Wong and Evelyn Cheung</p>
 						<div class="work__buttonContainer">
 							<a target="_blank" href="https://jamielockie.github.io/indeedApp/"><button class="button__rectangle--keyline">View Live</button></a>
@@ -262,7 +273,7 @@
 	<script src="public/scripts/app.js"></script>
 	
 <!-- 	    <script>
-   new WOW().init();
+	 new WOW().init();
 </script>
 	 -->
 </body>

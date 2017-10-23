@@ -1,4 +1,6 @@
-$(function() {
+$(function() {	
+	$('body').removeClass('fade-out');
+
 	$('a').smoothScroll({
 		offset: 100
 		});

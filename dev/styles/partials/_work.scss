@@ -17,15 +17,7 @@
 }
 .work__img {
 	width: 100%;
-	// box-shadow: 6px 6px 0px $fontDark;
-	// border: 3px solid $fontDark;
-	// transition: all 0.2s ease-in-out;
 	animation-delay: 0.2s;
-	&:hover {
-		// border: 3px solid $accentOne;
-		// box-shadow: 2px 2px 0px $accentOne;
-		// transition: all 0.2s ease-in-out;
-	}
 }
 
 .work__container:nth-child(even) {
