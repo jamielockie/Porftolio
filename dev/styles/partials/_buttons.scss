@@ -7,7 +7,6 @@
 	color:  $fontLight;
 	font-size: 14px;
 	font-weight: 500;
-	// line-height: 6.429;
 	text-align: center; 
 	text-transform: uppercase;
 	transition: all 0.3s;
@@ -29,7 +28,6 @@
 	transition: all 0.2s ease-in-out;
 	&:hover {
 		border-bottom: 3px solid $accentOne;
-		// text-shadow: 1px 1px $accentOne;
 		transition: all 0.2s;
 	}
 	@include respond-to("small") {
@@ -64,5 +62,4 @@
 	position: absolute;
 	bottom: 15px;
 	right: 15px;
-	// opacity: 0.5;
 }
