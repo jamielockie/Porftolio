@@ -10,11 +10,11 @@
 	// line-height: 6.429;
 	text-align: center; 
 	text-transform: uppercase;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s;
 	&:hover {
 		box-shadow: 2px 2px 0px $accentOne; 
 		border: 2px solid $fontLight;
-		transition: all 0.2s ease-in-out;
+		transition: all 0.2s;
 	}
 }
 
@@ -30,10 +30,19 @@
 	&:hover {
 		border-bottom: 3px solid $accentOne;
 		// text-shadow: 1px 1px $accentOne;
-		transition: all 0.2s ease-in-out;
+		transition: all 0.2s;
 	}
 	@include respond-to("small") {
 		margin-bottom: 15px;
+	}
+}
+
+.button__rectangle--white {
+	border: 2px solid $fontLight;
+	transition: all 0.2s;
+	&:hover {
+		box-shadow: 2px 2px #1c2024;
+		transition: all 0.2s;
 	}
 }
 

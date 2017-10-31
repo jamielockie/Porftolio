@@ -50,7 +50,7 @@
 	flex-direction: row-reverse;
 	.aboutContent__copy {
 		margin: 0;
-		padding-bottom: 36px;
+		padding-bottom: 20px;
 		min-width: 325px;
 		@include respond-to("small") {
 			width: 100%;
