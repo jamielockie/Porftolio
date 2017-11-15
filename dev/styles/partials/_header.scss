@@ -53,6 +53,7 @@
 .header__nav li {
 	width: 25%;
 	font-family: $mainFont;
+	padding: 0;
 	color: $fontLight;
 	font-weight: 400;
 	line-height: 5;
@@ -72,6 +73,7 @@
 	color: $fontLight;
 	font-size: 16px;
 	font-weight: 700;
+	padding: 10px;
 	letter-spacing: 2px;
 	transition: all 0.3s ease-in-out;
 	&:hover {
